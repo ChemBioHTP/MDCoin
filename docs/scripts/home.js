@@ -3,7 +3,7 @@
  */
 
 // 背景图片的存储路径。
-var bgImgDict = "../Resources/Images/Background/";
+var bgImgDict = "../resources/images/background/";
 
 /* 加载背景图片。 */
 function setBackgroundImage() {
@@ -53,7 +53,7 @@ function markdownToHtml(markdown) {
 }
 
 // Read Markdown file
-const filePath = '/README.md'; // Replace with your Markdown file path
+const filePath = './resources/files/README.md'; // Replace with your Markdown file path
 fetch(filePath)
   .then((res) => res.text())
   .then((text) => {
