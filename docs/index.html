@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="TheraMDCoin, MDCoin, Crypto coin, Crypto token" />
+  <meta name="description"
+    content="TheraMDCoin (Symbol: TMDC) is a revolutionary platform that democratizes access to molecular dynamics (MD) trajectory data, providing a decentralized ecosystem to support research and innovation across computational chemistry and drug discovery." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>TheraMDCoin (TMDC)</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="Bookmark" href="./favicon.ico" type="image/x-icon" />
+
+  <link href="./content/general.css" rel="stylesheet" />
+  <link href="./content/home.css" rel="stylesheet" />
+  <script type="text/javascript" src="./scripts/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="./scripts/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+  <div id="top"></div>
+  <div id="topBg"></div>
+  <div class="navBar" id="topNav">
+    <!-- <div class="topLogo"></div> -->
+    <div class="navBox">
+      <div class="navLink" onclick='slideToSection("top")' style="color: rgb(20, 20, 20); background-color: #ffc83e">
+        TheraMDCoin
+      </div>
+      <div class="navLink" onclick='slideToSection("whitepaper")'>White Paper</div>
+      <!-- <div class="navLink" onclick='slideToSection("about")'>About Us</div> -->
+      <div class="navLink" onclick='slideToSection("contact")'>Contact</div>
+    </div>
+    <span class="menuIcon" onclick="showNavMenu()"></span>
+  </div>
+  <div id="mask"></div>
+  <div id="navMenu">
+    <span class="menuIcon" onclick="hideNavMenu()"></span>
+    <a class="navLink" onclick='slideToSection("top", true)'>Home</a>
+    <a class="navLink" onclick='slideToSection("whitepaper", true)'>White Paper</a>
+    <!-- <a class="navLink" onclick='slideToSection("about", true)'>About Us</a> -->
+    <a class="navLink" onclick='slideToSection("contact", true)'>Contact</a>
+  </div>
+  <div id="topTitle">
+    <div class="hello">HELLO!</div>
+    <div class="im">This is</div>
+    <div class="name">TheraMDCoin</div>
+    <div class="gap"></div>
+    <div class="en-name">Symbol: TMDC</div>
+    <div class="slogan">A Revolutionary Platform that <br />Democratizes Access to MD Trajectory Data</div>
+    <div class="arrow">
+      <img src="./resources/Images/Icons/arrow_down_white.svg" onclick='slideToSection("whitepaper")' height="100%" />
+    </div>
+  </div>
+  <!-- <div class="cover-portrait">
+    <img src="./resources/Images/Logos/cover_portrait.png" width="100%" />
+  </div> -->
+  <div id="whitepaper">
+    <h3>White Paper</h3>
+    <div class="underline"></div>
+    <div class="paragraphs" id="whitepaper-paragraphs">
+      <h4>Our Mission</h4>
+      <p><b>TheraMDCoin (Symbol: TMDC)</b> is a revolutionary platform that democratizes access to molecular dynamics
+        (MD) trajectory data, providing a decentralized ecosystem to support research and innovation across
+        computational chemistry and drug discovery. By offering high-quality, verified MD data, TheraMDCoin empowers
+        researchers and industry professionals to unlock deeper insights into complex molecular interactions and
+        streamline the development of cutting-edge therapeutics. Among the many applications of TheraMDCoin, its
+        transformative potential is particularly evident in advancing PROTAC-based therapeutics.</p>
+      <p>PROTACs (Proteolysis Targeting Chimeras) are pioneering tools for targeted protein degradation, enabling the
+        therapeutic modulation of previously "undruggable" proteins. Designing effective PROTACs requires a nuanced
+        understanding of the dynamic interactions between the target protein, E3 ligase, and the linker that connects
+        them. TheraMDCoin’s MD trajectory data provides unprecedented insights into the formation, stability, and
+        conformational dynamics of these ternary complexes, facilitating not only a deeper understanding of these
+        processes but also direct prediction and virtual screening of PROTAC designs to optimize efficacy and
+        selectivity.</p>
+      <p>Leveraging TheraMDCoin’s decentralized data resources, researchers can explore how variations in linker length,
+        flexibility, and composition impact PROTAC performance. This information can be integrated with machine learning
+        models to predict degradation potential for novel PROTACs, accelerating the discovery process. Moreover,
+        TheraMDCoin’s platform aids in evaluating off-target interactions and assessing the impact of mutations, paving
+        the way for the design of resistance-proof therapies.</p>
+      <p>Beyond these core applications, TheraMDCoin’s extensive MD data repository also supports the optimization of
+        pharmacokinetic properties, such as solubility, membrane permeability, and overall drug-like characteristics. By
+        enabling comprehensive computational analyses, TheraMDCoin streamlines the rational design and optimization of
+        PROTAC-based therapies, ultimately advancing more effective and selective treatments.</p>
+      <p>TheraMDCoin’s innovative approach to MD trajectory data is transforming the landscape of therapeutic
+        development. While its utility extends across a wide array of fields, its role in advancing PROTAC therapeutics
+        exemplifies how blockchain technology and decentralized data sharing can revolutionize research, offering a
+        powerful tool for addressing complex scientific challenges and fostering groundbreaking medical advancements.
+      </p>
+      <h4>
+        What is TheraMDCoin?
+      </h4>
+    </div>
+    <div id="work-classifier-list">
+      <!-- The script will generate the 'classifier' content here. -->
+    </div>
+    <div id="workList">
+      <!-- The script will generate the 'work' content here. -->
+    </div>
+  </div>
+  <!-- <div id="about">
+    <h3>About Us</h3>
+    <div class="underline"></div>
+    <div class="aboutcontent">
+      <div>Placeholder</div>
+    </div>
+  </div> -->
+  <div id="contact">
+    <h3>Contact <span style="font-size: 30px">@ TheraMDCoin Team</span></h3>
+
+    <table class="github">
+      <tr>
+        <th>Github:</th>
+        <td>
+          <a href="https://github.com/ChemBioHTP/MDCoin">https://github.com/ChemBioHTP/MDCoin</a>
+        </td>
+      </tr>
+      <!-- <tr>
+          <th></th>
+          <td>
+            <a href="mailto:fengzx99@foxmail.com">fengzx99@foxmail.com</a>
+          </td>
+        </tr> -->
+    </table>
+
+    <div id="platforms">
+      <!-- The script will generate the 'log' content here. -->
+    </div>
+  </div>
+  <div id="footer">
+    <span class="footerCol" id="copyright">
+      <p class="footerText1">© 2024 Yang Lab @ Vanderbilt. All Rights Reserved.</p>
+      <!--<span class="beianText"
+          ><a
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            class="footerText2"
+            >Shanghai ICP File: XXXX</a
+          ></span
+        >-->
+    </span>
+  </div>
+  <script type="text/javascript" src="./scripts/general.js"></script>
+  <script type="text/javascript" src="./scripts/home.js"></script>
+</body>
+
+</html>

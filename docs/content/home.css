@@ -1,0 +1,560 @@
+body {
+  height: 100%;  
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 75px;
+  color: #000;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: x-large;
+  /* color: #fff; */
+}
+
+h3 {
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 60px;
+  color: rgb(20, 20, 20);
+  margin-block-start: 0.8em;
+  margin-block-end: 0.6em;
+}
+
+/* Top & Nav */
+
+
+#topTitle {
+  margin: 0 10vw;
+  position: absolute;
+  margin-top: 18vh;
+  width: 80vw;
+  /* text-align: center; */
+  display: grid;
+  grid-template-areas:
+    'hello hello . . .'
+    'im im . . .'
+    '. name name name .'
+    'gap gap gap gap gap'
+    'en-name arrow arrow arrow slogan';
+  /* grid-gap: 10px; */
+  align-items: center;
+  font-family: Arial;
+}
+
+#topTitle .hello {
+  grid-area: hello;
+  font-size: 7vw;
+}
+#topTitle .im {
+  grid-area: im;
+  font-size: 7vw;
+}
+
+#topTitle .name {
+  grid-area: name;
+  font-size: 7.5vw;
+  text-align: center;
+  z-index: 99;
+}
+
+#topTitle .gap {
+  grid-area: gap;
+  height: 11vh;
+}
+
+#topTitle .en-name {
+  grid-area: en-name;
+  width: 15vw;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#topTitle .arrow {
+  grid-area: arrow;
+  text-align: center;
+  height: 12vh;
+  cursor: pointer;
+}
+
+#topTitle .arrow:hover {
+  opacity: 0.3;
+}
+
+#topTitle .slogan {
+  grid-area: slogan;
+  width: 15vw;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.cover-portrait {
+  position: absolute;
+  top: 11vh;
+  left: 22vw;
+  right: 0;
+  margin: auto;
+  /* background-color: black; */
+  width: 36vw;
+}
+
+.underline {
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  margin-top: -30px;
+  width: 70px;
+  border-bottom: 4px solid #ffc947;;
+}
+
+.underline1 {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -10px;
+  width: 50px;
+  border-bottom: 3px solid rgba(255, 149, 63, 0.9);
+}
+
+#scrollDown {
+  /* position: absolute; */
+  /* top: 80%; */
+  /* margin-top: -100px; */
+  /* width: 100%; */
+  text-align: center;
+
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#scrollDown img {
+  max-width: 10vw;
+  opacity: 0.9;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#scrollDown img:hover {
+  opacity: 0.3;
+}
+
+#top {
+  position: relative;
+  top: 0;
+}
+
+#about,
+#whitepaper,
+#log {
+  position: relative;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Work Section */
+
+#whitepaper {
+  background: #fff;
+}
+
+#whitepaper .paragraphs {
+  color: #646464;
+  text-align: left;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+#whitepaper .paragraphs h4 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  font-size: 48px;
+  line-height: 2rem;
+}
+
+#whitepaper .paragraphs h5 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+
+  font-size: 32px;
+  line-height: 2rem;
+}
+
+#whitepaper .paragraphs p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  font-size: 22px;
+  line-break: auto;
+  line-height: 1.5rem;
+}
+
+/* About Section */
+
+.tagBox {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  font-size: small;
+}
+
+.tag {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #646464;
+}
+
+.tag:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #0a0a0a;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 5px 10px;
+}
+
+.aboutContent {
+  position: relative;
+  /* margin-top: 1rem; */
+  margin-top: 6vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  max-width: 95vw;
+  /* Grid Display */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: min-content;
+  column-gap: 5vw;
+  /* background: #fff; */
+  color: black;
+}
+
+.aboutContent .portrait {
+  background-image: url(/Resources/Images/Logos/portrait.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* max-width: 20vw; */
+}
+
+.aboutContent .resume {
+  text-align: left;
+  font-size: 20px;
+}
+
+.aboutContent .resume h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.aboutContent .resume .download {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: none;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.aboutContent .resume .download:hover {
+  color:#ffc947;
+  border-bottom: 2px solid #ffc947;
+  opacity: 0.8;
+}
+
+.aboutContent .resume .download:active {
+  opacity: 0.6;
+}
+
+.aboutContent .resume .award {
+  display: flex;
+  align-items: flex-start;
+}
+
+.aboutContent .resume .award .year {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.aboutContent .resume .award .award-detail {
+  margin-top: 0.8rem;
+}
+
+.aboutContent .resume h5 {
+  font-size: 24px;
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.2rem;
+}
+
+/* log Section*/
+
+.logBoxOuter {
+  position: relative;
+  margin-top: 30px;
+  width: 70%;
+  left: 15%;
+  overflow: hidden;
+}
+
+#logBox {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  overflow: -moz-scrollbars-none;
+  -webkit-overflow-scrolling: touch;
+}
+
+#logBox::-webkit-scrollbar {
+  display: none;
+}
+
+.tip {
+  padding-top: 10px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.logContent {
+  display: inline-block;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.logText1,
+.logText3 {
+  font-size: 18px;
+  line-height: 3px;
+  font-family: microsoft yahei;
+  font-weight: 700;
+}
+
+.logText2 {
+  font-size: small;
+  line-height: 5px;
+}
+
+.logText3 {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.logMaskL,
+.logMaskR {
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 100%;
+}
+
+.logMaskL {
+  left: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logMaskR {
+  left: 90%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  top: 100%;
+  text-align: left;
+}
+
+#contact h3 {
+  color: white;
+}
+
+#contact .github {
+  font-size: 20px;
+  color: white;
+}
+
+#contact .github tr th {
+  height: 2rem;
+}
+
+#contact .github tr th {
+  width: 5rem;
+}
+
+#contact .github a {
+  color: white !important;
+}
+
+#contact .github a:visited {
+  color: white;
+}
+
+#contact #platforms {
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  display: grid;
+  grid-template-columns: 50px 50px;
+  column-gap: 40px;
+  grid-template-rows: 50px;
+  justify-content: right;
+}
+
+#contact #platforms .account {
+  background-size: contain;
+  cursor: pointer;
+
+  /* 过渡效果 */
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+}
+
+#contact #platforms .account:hover {
+  opacity: 0.8;
+}
+
+#contact #platforms .account:active {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 1200px) {
+  #topTitle .gap {
+    height: 25vh;
+  }
+  .cover-portrait {
+    top: 16vh;
+    left: 20vw;
+    width: 36vw;
+  }
+  #whitepaperList {
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 36vh;
+  }
+  #whitepaper .paragraphs {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .aboutContent {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  
+    /* Grid Display */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+  .aboutContent .portrait {
+    min-width: 30vw;
+    min-height: 25vh;
+  }
+  .aboutContent .resume .download {
+    margin: 2rem auto;
+  }
+  .aboutContent h4 {
+    text-align: center;
+  }
+  #contact {
+      text-align: center;
+  }
+  #contact #platforms {
+      justify-content: center;
+  }
+  #contact .github {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #topTitle .gap {
+    height: 40vh;
+  }
+  .cover-portrait {
+    top: 19vh;
+    left: 20vw;
+  }
+  #whitepaper .paragraphs {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: medium;
+    line-height: 24px;
+  }
+  #whitepaperList {
+    grid-template-columns: repeat(1, 240px);
+    grid-auto-rows: 300px;
+  }
+  #whitepaperList .workLink .workLinkPic {
+      height: 200px;
+  }
+  .workLinkText1 {
+    margin-bottom: 5px;
+    min-height: fit-content;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  
+  .workLinkText2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: fit-content;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  
+  .workLinkText3 {
+    font-size: 14px;
+    line-height: 14px;
+    min-height: fit-content;
+  }
+  .tagBox {
+    font-size: 12px;
+  }
+  .aboutContent {
+    margin: 0 auto;
+    font-size: small;
+    width: 90%;
+  }
+  .logContent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #contact {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}

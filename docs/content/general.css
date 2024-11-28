@@ -1,0 +1,371 @@
+@font-face {
+  font-family: neosans;
+  src: url('./Resources/Files/Neosans.otf');
+}
+
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif, neosans;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  
+}
+
+div, img, span {
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+   color: initial
+}
+
+::selection {
+  background: #ffdf96;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #ffdf96;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #ffdf96;
+  color: #fff;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#topBg {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url(../Resources/Images/Background/Dundee.jpg); */
+  color: transparent;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  transition: opacity 1s;
+  opacity: 0.6;
+}
+
+.navBar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+}
+
+.topLogo {
+  position: absolute;
+  left: 0;
+  margin-left: 200px;
+  top: 10px;
+  width: 250px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+}
+
+.navBox {
+  position: absolute;
+  display: flex;
+  right: 100%;
+  margin-right: -575px;
+  /* width: 400px; */
+  text-align: center;
+}
+
+.navLink {
+  font-size: medium;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+}
+
+.navBar .navLink {
+  color: white;
+  font-size: 15px;
+  padding: 30px;
+}
+
+.navBar .navLink:link,
+.navBar .navLink:visted {
+  color: rgb(24, 24, 24);
+}
+
+.navBar .navLink:before {
+  content: "";
+  width: 80%;
+  left: 10%;
+  height: 3px;
+  position: absolute;
+  bottom: 20px;
+  background: #ffc83e;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+  transform: scale(0);
+}
+
+.navBar .navLink:hover:before {
+  transform: scale(1);
+}
+
+.navBar .navLink:active:before {
+  background: rgba(90, 90, 90, 0.8);
+}
+
+.navBar .navLink:active {
+  color: #ffc83e;
+}
+
+.menuIcon {
+  position: absolute;
+  top: 31.5px;
+  left: 100%;
+  margin-left: -50px;
+  width: 25px;
+  height: 2px;
+  padding: 6px 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  background-clip: content-box;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+  cursor: pointer;
+  display: none;
+}
+
+.navBar .menuIcon {
+  border-color: white;
+  background-color: white;
+}
+
+#navMenu .menuIcon {
+  border-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navBar .menuIcon:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#navMenu .menuIcon:hover {
+  border-color: rgba(255, 149, 63, 0.6);
+  background-color: rgba(255, 149, 63, 0.6);
+}
+
+#mask {
+  position: fixed;
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  background: 0 0;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#navMenu {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 100%;
+  margin-left: 30px;
+  width: 260px;
+  height: 100%;
+  padding-top: 80px;
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 30px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 30px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#navMenu .navLink {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: small;
+  display: block;
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#navMenu .navLink:link,
+#navMenu .navLink:visted {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#navMenu .navLink:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* Footer Section */
+
+#footer {
+  position: relative;
+  top: 100%;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.footerCol {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footerTitle {
+  font-family: microsoft yahei;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 10px;
+  color: #fff;
+}
+
+.footerLink {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+}
+
+a.footerLink:link,
+a.footerLink:visted {
+  color: #fff;
+}
+
+a.footerLink:hover {
+  color: rgba(255, 242, 63, 0.918);
+}
+
+a.footerLink:active {
+  color: rgba(255, 149, 63, 0.9);
+}
+
+.footerText1 {
+  color: #fff;
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.beianText {
+  position: relative;
+  /* top: -6px; */
+}
+
+.footerText2 {
+  color: white;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .topLogo {
+    margin-left: 100px;
+  }
+  .navBox {
+    
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topLogo {
+    margin-left: 25px;
+  }
+  .navBox {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #footer {
+    padding-bottom: 5px;
+  }
+  .footerCol {
+    padding-bottom: 30px;
+  }
+  #copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footerCol {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
